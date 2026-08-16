@@ -7,6 +7,8 @@ import Dashboard from "./pages/Dashboard";
 import CropPrediction from "./pages/CropPrediction";
 import Analytics from "./pages/Analytics";
 import Profile from "./pages/Profile";
+import Irrigation from "./pages/Irrigation";
+import Weather from "./pages/Weather";
 
 function App() {
   return (
@@ -23,7 +25,8 @@ function App() {
         <Route path="/prediction" element={<CropPrediction />} />
         <Route path="/analytics" element={<Analytics />} />
         <Route path="/profile" element={<Profile />} />
-
+        <Route path="/irrigation" element={<Irrigation />} />
+        <Route path="/weather" element={<Weather />} />
       </Routes>
     </BrowserRouter>
   );

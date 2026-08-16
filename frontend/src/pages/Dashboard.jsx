@@ -108,11 +108,11 @@ function Dashboard() {
     dashboard?.recent_predictions || [];
 
   return (
-    <div className="dashboard-page">
+    <><div className="dashboard-page">
 
       {/* =========================================
-          HEADER
-      ========================================= */}
+        HEADER
+    ========================================= */}
 
       <header className="dashboard-header">
 
@@ -155,8 +155,8 @@ function Dashboard() {
 
 
       {/* =========================================
-          STATISTICS
-      ========================================= */}
+        STATISTICS
+    ========================================= */}
 
       <section className="dashboard-stats">
 
@@ -240,8 +240,8 @@ function Dashboard() {
 
 
       {/* =========================================
-          MAIN GRID
-      ========================================= */}
+        MAIN GRID
+    ========================================= */}
 
       <section className="dashboard-main-grid">
 
@@ -452,7 +452,49 @@ function Dashboard() {
 
       </section>
 
-    </div>
+    </div><div
+      style={{
+        marginTop: "40px",
+        padding: "20px 24px",
+        background: "#fffaf0",
+        border: "1px solid #f1dfb5",
+        borderRadius: "14px",
+        display: "flex",
+        gap: "15px",
+        alignItems: "flex-start",
+      }}
+    >
+        <div style={{ fontSize: "24px" }}>⚠️</div>
+
+        <div>
+          <h3
+            style={{
+              margin: "0 0 8px",
+              color: "#7c5a00",
+            }}
+          >
+            Important Disclaimer
+          </h3>
+
+          <p
+            style={{
+              margin: 0,
+              color: "#665c45",
+              lineHeight: "1.6",
+              fontSize: "14px",
+            }}
+          >
+            AgroSmart AI provides AI-based crop recommendations,
+            weather information, and irrigation guidance for
+            informational and decision-support purposes only.
+            Results may vary depending on soil conditions, weather,
+            farming practices, crop variety, and other environmental
+            factors. Please verify recommendations with local
+            agricultural experts before making important farming
+            or financial decisions.
+          </p>
+        </div>
+      </div></>
   );
 }
 

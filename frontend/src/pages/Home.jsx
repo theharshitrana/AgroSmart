@@ -7,6 +7,7 @@ import WhyChoose from "../components/WhyChoose";
 import Testimonials from "../components/Testimonials";
 import FAQ from "../components/FAQ";
 import CTA from "../components/CTA";
+import Disclaimer from "../components/Disclaimer";
 import Footer from "../components/Footer";
 
 function Home() {
@@ -21,6 +22,7 @@ function Home() {
       <Testimonials />
       <FAQ />
       <CTA />
+      <Disclaimer />
       <Footer />
     </>
   );

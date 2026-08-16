@@ -31,11 +31,13 @@ function Features() {
 
   return (
     <section
-      style={{
-        padding: "80px 60px",
-        background: "#f8fffa",
-      }}
-    >
+    id="features"
+   style={{
+    padding: "80px 60px",
+    background: "#f8fffa",
+   }}
+      >
+    {">"}
       <h2
         style={{
           textAlign: "center",

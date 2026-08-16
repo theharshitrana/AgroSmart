@@ -1,5 +1,6 @@
 import { FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -50,7 +51,11 @@ function Hero() {
             gap: "20px"
           }}
         >
-          <button
+
+          {/* GET STARTED */}
+
+          <Link
+            to="/register"
             style={{
               padding: "15px 35px",
               background: "#16a34a",
@@ -58,13 +63,20 @@ function Hero() {
               border: "none",
               borderRadius: "12px",
               cursor: "pointer",
-              fontSize: "18px"
+              fontSize: "18px",
+              textDecoration: "none",
+              display: "inline-flex",
+              alignItems: "center"
             }}
           >
             Get Started
-          </button>
+          </Link>
 
-          <button
+
+          {/* LEARN MORE */}
+
+          <a
+            href="#features"
             style={{
               padding: "15px 35px",
               background: "white",
@@ -72,13 +84,19 @@ function Hero() {
               color: "#16a34a",
               borderRadius: "12px",
               cursor: "pointer",
-              fontSize: "18px"
+              fontSize: "18px",
+              textDecoration: "none",
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "8px"
             }}
           >
             Learn More <FaArrowRight />
-          </button>
+          </a>
+
         </div>
       </motion.div>
+
 
       <motion.div
         initial={{ x: 80, opacity: 0 }}
@@ -95,6 +113,7 @@ function Hero() {
           }}
         />
       </motion.div>
+
     </section>
   );
 }
